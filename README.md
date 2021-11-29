@@ -15,7 +15,7 @@ Pada bagian ini, metode yang digunakan adalah ```Round Robin``` dimana trafik ak
 ke service app backend 1, app backend 2 dan app backend 3.
 
 - ### Menjalankan Docker Container
-  Sebelum menjalankan layanan ini pastikan sudah menginstall ```Docker Engine``` dan ```Docker Compose``` sebagai wadah virtualisasi container.
+  Sebelum menjalankan layanan ini pastikan sudah menginstall ```Docker Engine``` dan ```Docker Compose``` sebagai wadah dan alat untuk membuat virtualisasi container.
 
   Untuk menjalankan layanan ini secara keseluruhan ketikan perintah ini pada terminal.
   
