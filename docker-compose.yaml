@@ -1,0 +1,31 @@
+version: "3.8"
+services:
+  app1:
+    container_name: app-service1
+    build: ./app1
+    networks:
+      - nginx-webservice
+  app2:
+    container_name: app-service2
+    build: ./app2
+    networks:
+      - nginx-webservice
+  app3:
+    container_name: app-service3
+    build: ./app3
+    networks:
+      - nginx-webservice
+  nginx:
+    build: .
+    ports:
+      - "8080:80"
+    depends_on:
+      - app1
+      - app2
+      - app3
+    networks:
+      - nginx-webservice
+
+networks:
+  nginx-webservice:
+    name: "nginx-webservice"
